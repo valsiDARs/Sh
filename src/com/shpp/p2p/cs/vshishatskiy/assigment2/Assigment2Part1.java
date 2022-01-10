@@ -65,11 +65,11 @@ public class Assigment2Part1 extends TextProgram {
         }
 
         if(discriminant == 0){
-            print("There is one root: " + FIRST_ROOT);
+            System.out.printf("There is one root: %.3f", FIRST_ROOT);
         }
 
         if (discriminant > 0){
-            print("There are two roots: " + FIRST_ROOT + " and " + SECOND_ROOT);
+            System.out.printf("There are two roots: %.3f and %.3f", FIRST_ROOT, SECOND_ROOT);
         }
     }
 }
