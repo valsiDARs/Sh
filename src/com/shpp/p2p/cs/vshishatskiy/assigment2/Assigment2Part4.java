@@ -23,27 +23,25 @@ public class Assigment2Part4 extends WindowProgram {
 
     @Override
     public void run() {
-        add(creatingRectangle(0,FIRST_COLOR));
-        add(creatingRectangle(WIDTH_FLAG/3, SECOND_COLOR));
-        add(creatingRectangle(WIDTH_FLAG/3*2, THIRD_COLOR));
+        add(creatingRectangle(0, FIRST_COLOR));
+        add(creatingRectangle(WIDTH_FLAG / 3, SECOND_COLOR));
+        add(creatingRectangle(WIDTH_FLAG / 3 * 2, THIRD_COLOR));
 
         add(creatingText());
     }
-    private GRect creatingRectangle(double offsetX, Color color){
-        GRect gRect = new GRect((getWidth() - WIDTH_FLAG)/2 + offsetX,(getHeight() - HEIGHT_FLAG)/2,WIDTH_FLAG/3,HEIGHT_FLAG);
+
+    private GRect creatingRectangle(double offsetX, Color color) {
+        GRect gRect = new GRect((getWidth() - WIDTH_FLAG) / 2 + offsetX, (getHeight() - HEIGHT_FLAG) / 2, WIDTH_FLAG / 3, HEIGHT_FLAG);
         gRect.setColor(color);
         gRect.setFillColor(color);
         gRect.setFilled(true);
         return gRect;
     }
 
-    private GLabel creatingText(){
+    private GLabel creatingText() {
         GLabel gLabel = new GLabel("Flag of " + COUNTRY_NAME);
         gLabel.setFont(TEXT_FONT);
-        gLabel.setLocation(getWidth() - gLabel.getWidth(),getHeight() - gLabel.getHeight()/2 );
+        gLabel.setLocation(getWidth() - gLabel.getWidth(), getHeight() - gLabel.getHeight() / 2);
         return gLabel;
     }
-
-
-
 }
