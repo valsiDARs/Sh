@@ -1,6 +1,5 @@
 package com.shpp.p2p.cs.vshishatskiy.assigment2;
 
-import acm.graphics.GLabel;
 import acm.graphics.GLine;
 import acm.graphics.GRect;
 import com.shpp.cs.a.graphics.WindowProgram;
@@ -22,8 +21,6 @@ public class Assigment2Part5 extends WindowProgram {
 
     @Override
     public void run() {
-        //add(new GRect(51,getHeight()/2,40,40));
-        //add(new GRect(301,getHeight()/2,40,40));
         GLine gLine = new GLine(0,getHeight()/2,50,getHeight()/2);
         GLine gLine2 = new GLine(getWidth()/2,0,getWidth()/2,50);
         GLine gLine3 = new GLine(getWidth()/2,getHeight()-50,getWidth()/2,getHeight());
